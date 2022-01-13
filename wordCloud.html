@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ div {
+  border:1px solid red;
+  padding:10px;
+  height:30px;
+ }
+ </style>
+
+ <script type="text/javascript">
+  function a(obj){
+	  var width = Number(obj.style.width.split("px")[0]);
+	  console.log(width*2);
+	  obj.style.width=(width*2)+'px';
+  }
+ </script>
+
+</head>
+
+<body>
+ <div style="width:50px; background-color:yellow;" onclick="a(this)">Java</div>
+ <div style="width:50px; background-color:green;" onclick="a(this)">Python</div>
+ <div style="width:50px; background-color:orange;" onclick="a(this)">SSAFY</div>
+ <div style="width:50px; background-color:blue;" onclick="a(this)">Samsung</div>
+</body>
+</html>
